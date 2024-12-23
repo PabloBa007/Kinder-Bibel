@@ -1,0 +1,253 @@
+
+/* Allgemeines Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 30px;
+    background-color: #f0f8ff; /* Sanftes Blau */
+    color: #333;
+    box-sizing: border-box;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.menu-button {
+    background-color: #FDEBD0;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-button img {
+    width: 50px;
+    height: auto;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.menu-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-dropdown li {
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-dropdown li:last-child {
+    border-bottom: none;
+}
+
+.menu-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0,3s;
+}
+
+.menu-dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Dropdown Visibility Toggle */
+.menu-button:hover + .menu-dropdown,
+.menu-dropdown:hover {
+    display: block;
+}
+
+/* Hauptüberschrift */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+/* Kapitelüberschriften */
+h2 {
+    color: #34495e;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 30px 100px;
+}
+
+/* Textabsätze */
+p {
+    margin: 10px 100px;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.menu-custom {
+    right: 500px; /* Verschiebt das Menü 500px vom rechten Rand */
+}
+
+/* Hervorgehobener Text */
+b {
+    color: #2980b9;
+}
+
+/* Layout für Text und Bilder */
+.section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Abstand zwischen Text und Bild */
+    margin-bottom: 30px; /* Abstand zwischen Abschnitten */
+    padding-right: 20px; /* Abstand von der rechten Seite */
+}
+
+.section img {
+    max-width: 40%; /* Bilder nehmen 40% der Breite */
+    height: auto;
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Weicher Schatten */
+}
+
+.section .content {
+    flex: 1; /* Text füllt den Rest der Breite */
+}
+
+.text-mit-bild {
+    background-image: url('../Bilder/alt2Eroberung.webp');
+    background-size: cover; /* Passt das Bild an den Bereich an */
+    background-position: center; /* Zentriert das Bild */
+    background-repeat: no-repeat; /* Verhindert Wiederholung des Bildes */
+    height: auto; /* Höhe passt sich an den Inhalt an */
+    padding: 20px; /* Innenabstand für die Texte */
+    color: rgb(8, 41, 60); /* Textfarbe für bessere Lesbarkeit */
+    font-size: 18px; /* Angemessene Schriftgröße */
+    display: block; /* Sicherstellen, dass der Text untereinander steht */
+
+}
+
+.text-mit-bild p {
+    margin: 10px 100; /* Abstand zwischen den Textabsätzen */
+}
+
+.text-mit-bild2 {
+    background-image: url('../Bilder/alt2sonnenstillstand.webp');
+    background-size: cover; /* Passt das Bild an den Bereich an */
+    background-position: center; /* Zentriert das Bild */
+    background-repeat: no-repeat; /* Verhindert Wiederholung des Bildes */
+    height: auto; /* Höhe passt sich an den Inhalt an */
+    padding: 20px; /* Innenabstand für die Texte */
+    color: rgb(8, 41, 60); /* Textfarbe für bessere Lesbarkeit */
+    font-size: 18px; /* Angemessene Schriftgröße */
+    display: block; /* Sicherstellen, dass der Text untereinander steht */
+}
+
+.text-mit-bild2 p {
+    margin: 10px 100; /* Abstand zwischen den Textabsätzen */
+}
+
+
+/* Stil für den umrahmten Link */
+.rahmen-link {
+    display: flex;
+    justify-content: center; /* Zentriert den Text horizontal */
+    align-items: center; /* Zentriert den Text vertikal */
+    margin: 30px auto; /* Abstand von oben und unten */
+}
+
+.link-zu-geschichten {
+    display: inline-block;
+    padding: 15px 30px; /* Innenabstand des Rahmens */
+    text-decoration: none; /* Entfernt die Unterstreichung des Links */
+    color: #333333; /* Sanftes Schwarz für die Schrift */
+    background-color: #d4edda; /* Sanftes Grün */
+    border: 2px solid #b8dfc2; /* Rahmen in einem dezenten Grün */
+    border-radius: 30px; /* Abgerundete Ecken */
+    font-size: 18px; /* Schriftgröße */
+    font-weight: bold; /* Fettgedruckte Schrift */
+    text-align: center; /* Zentrierter Text */
+    transition: background-color 0.3s ease; /* Weicher Übergang beim Hover */
+}
+
+.link-zu-geschichten:hover {
+    background-color: #f9c74f; /* Goldener Hintergrund bei Hover */
+}
+
+.rutueberschrift {
+    display: flex;
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    gap: 50px; /* Abstand zwischen der H1 und dem Bild */
+}
+
+.rutueberschrift h1 {
+    margin: 0; /* Entfernt zusätzlichen Abstand */
+    text-align: center; /* Zentriert den Text */
+}
+
+.rutueberschrift img {
+    width: 100px;
+    height: auto;
+    border-radius: 50px; /* Abgerundete Ecken */
+}
+
+.fixed-image {
+    position: fixed; /* Fixiert das Bild an einer bestimmten Position */
+    top: 140px; /* Abstand von oben */
+    right: 20px; /* Abstand vom rechten Rand */
+    width: 400px; /* Breite des Bildes */
+    height: auto; /* Automatische Anpassung der Höhe */
+    border-radius: 20px; /* Optional: Abgerundete Ecken */
+}
+.alt3class {
+    padding-right: 400px;
+}
+
+.image-slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px; /* Feste Höhe des Sliders */
+    overflow: hidden;
+    z-index: 1000;
+    background-color: #000; /* Hintergrundfarbe als Fallback */
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Zentriert das Bild horizontal */
+    transform: translateX(-50%); /* Korrektur der Zentrierung */
+    width: 80%; /* Breite des Bildes auf 80% */
+    height: 300px; /* Fixierte Höhe */
+    object-fit: contain; /* Bild bleibt innerhalb der fixierten Höhe */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+.alt4class {
+    margin-top: 400px; 
+}
