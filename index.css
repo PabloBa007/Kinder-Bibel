@@ -1,0 +1,152 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDEBD0;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center; /* Bleibt, da h1 ohnehin zentriert war */
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDEBD0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.menu-button {
+    background-color: #FDEBD0;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-button img {
+    width: 50px;
+    height: auto;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.menu-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-dropdown li {
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-dropdown li:last-child {
+    border-bottom: none;
+}
+
+.menu-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0,3s;
+}
+
+.menu-dropdown a:hover {
+    background-color: #f0f0f0;  
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Visibility Toggle */
+.menu-button:hover + .menu-dropdown,
+.menu-dropdown:hover {
+    display: block;
+}
+
+.testament-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.testament {
+    text-align: center;
+}
+
+.testament-link {
+    text-decoration: none; /* Standardmäßig keine Unterstreichung */
+    color: inherit;
+}
+
+.testament img {
+    width: 500px; /* Optimale Größe für Startseite */
+    height: auto;
+    border-radius: 10px; /* Für sanftere Kanten */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testament-link h3 {
+    font-size: 30px;
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.testament-link:hover h3 {
+    text-decoration: underline; /* Unterstreichung bei Hover */
+}
